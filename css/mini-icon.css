@@ -1,0 +1,11 @@
+.mini-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('/ixd/img/mini-icons.png') no-repeat;
+    /* background-position: ; 图片以容器左上角为参考 左移为负值，上移为负值 */
+}
+
+.mi-off {background-position: 0px 0px;}
+.mi-on {background-position: -24px 0px;}
+.mi-debug {background-position: 0px -24px;}

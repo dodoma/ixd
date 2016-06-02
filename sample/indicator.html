@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+  <head>
+    <title>ixd－indicator</title>
+    <link rel="stylesheet" type="text/css" href="/ixd/b/base.css" />
+    <link rel="stylesheet" type="text/css" href="/ixd/css/indicator.css" />
+    <script type="text/javascript" src="/ixd/b/base.js"></script>
+    <script type="text/javascript" src="/ixd/js/indicator.js"></script>
+  </head>
+
+  <body>
+    <div id="bd-top">
+    </div>
+
+    <div id="bd-middle">
+      <h2>indicator</h2>
+
+      <!-- 一个元素下，不能有2个 indicator 元素，故用span隔开 -->
+      <span>
+        <input type="button" id="pnew-submit" value="创建ok" />
+        <span class="indicator" title="创建成功"></span>
+      </span>
+
+      <div class="sep"></div>
+
+      <span>
+        <input type="button" id="pnew-submit-error" value="创建error" />
+        <span class="indicator" title="创建失败"></span>
+      </span>
+    </div>
+
+    <div id="bd-bottom">
+      <p>dodoma 版权所有</p>
+    </div>
+
+  </body>
+
+</html>

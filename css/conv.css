@@ -1,0 +1,54 @@
+.decimal {font: 12px Georgia; font-weight: bold;}
+.slight {color:#767676;}
+.em {font-weight: bold;}
+.eem {font-weight: bold; font-size: 120%;}
+
+.text-red {color: #ff0000;}
+.text-green {color: #00ff00;}
+.text-blue {color: #0000ff;}
+
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.full-width {padding: 0 !important;}
+
+/*
+ * 浮动元素自动变为块级元素，
+ * 如 <span class="fright" 将可以为其设置宽度，跟display: inline-block效果一样，
+ * 除了后者有浏览器兼容问题
+ */
+.fright {float: right;}
+.fleft {float: left;}
+
+.w100 {width: 100px;}
+
+.mr2 {margin-right: 2em;}
+.mr5 {margin-right: 5em;}
+.ml2 {margin-left: 2em;}
+.ml5 {margin-left: 5em;}
+
+.pr2 {padding-right: 2em;}
+.pr5 {padding-right: 5em;}
+.pl2 {padding-left: 2em;}
+.pl5 {padding-left: 5em;}
+
+
+.hide {display: none !important;}
+.show {display: block !important;}
+.valid {border: 1px solid green !important;}
+.invalid {border: 1px solid #800 !important;}
+.clearer {clear: both !important;}
+.sep {display: block; clear: both; height: 3em;}
+.sepl {display: block; clear: both; height: 1em;}
+
+
+/* 有移动子元素时，为其后面的元素自动添加clear，跟最后子元素为clearer效果一样（除了不能为自己设置高度） */
+.clearfix {
+    display: block;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

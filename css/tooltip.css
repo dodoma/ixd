@@ -1,0 +1,86 @@
+span.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+span.tooltip > i {
+	text-align: center;
+	font: italic normal 90% Georgia, serif;
+	line-height: 150%;
+	color: black;
+	text-shadow: white 0 1px;
+    background: -webkit-linear-gradient(#DDD, #CCC);
+    background:    -moz-linear-gradient(#DDD, #CCC);
+    background:     -ms-linear-gradient(#DDD, #CCC);
+    background:      -o-linear-gradient(#DDD, #CCC);
+    background:         linear-gradient(#DDD, #CCC);
+    background-clip: padding-box;
+	box-shadow: 0 0px 1px rgba(0, 0, 0, 0.5);
+	border: 2px solid #111;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+	position: absolute;
+	width: 250px;
+	left: 50%;
+	margin-left: -125px;
+	padding: 10px 0;
+	bottom: 100%;
+	margin-bottom: 15px;
+	visibility:hidden;
+	opacity:0;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+}
+
+span.tooltip > i:before,
+span.tooltip > i:after {
+	content: "";
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+}
+
+span.tooltip > i:before {
+	border-top: 10px solid #111;
+	border-top: 10px solid rgba(0, 0, 0, 0.5);
+	margin-top: 2px;
+}
+
+span.tooltip > i:after{
+	border-top: 10px solid #CCC;
+	margin-top: -2px;
+	z-index: 1;
+}
+
+span.tooltip:hover > i {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+/* 其他方向 */
+
+span.ttleft > i {
+    left: 100% !important;                 /* 父元素<span> 的结束位置（紧挨着） */
+    margin-left: -250px !important;
+}
+span.ttleft > i:before,
+span.ttleft > i:after {
+	left: 90% !important;
+}
+
+
+span.ttright > i {
+    left: 0% !important;                   /* 父元素<span> 的起始位置 */
+    margin-left: 0px !important;
+}
+span.ttright > i:before,
+span.ttright > i:after {
+	left: 10% !important;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+  <head>
+    <title>ixd－base</title>
+    <link rel="stylesheet" type="text/css" href="/ixd/b/base.css" />
+    <script type="text/javascript" src="/ixd/b/base.js"></script>
+  </head>
+
+  <body>
+    <div id="bd-top">
+      <ul id="bd-nav">
+        <li class="select">项目1</li>
+        <li><a>项目2</a></li>
+        <li><a>项目3</a></li>
+      </ul>
+
+      <a id="top-right">欢迎</a>
+    </div>
+
+    <div id="bd-middle">
+      <!-- ******** 基础组件 ******** -->
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <a>连接</a>
+      <p>段落1</p>
+      <p>段落2，段落里面的数字<span class="decimal">198</span>，
+      段落里的<span class="slight">轻文字</span>，
+      段落里的<span class="em">重文字</span>，
+      段落里的<span class="eem">重重文字</span>
+      </p>
+      <div class="sep"></div>
+
+
+      <!-- ******** 输入组件 ******** -->
+      <input type="checkbox" />
+      <input type="text" class="short"/>
+      <input type="text" />
+      <input type="text" class="long"/>
+      <input type="text" class="llong"/>
+      <input type="password" />
+      <input type="radio" name="sex" value="male" /> Male
+      <input type="radio" name="sex" value="female" /> Female
+      <textarea rows="10" cols="10"></textarea>
+      <br />
+
+      <input type="button" value="普通按钮" />
+      <input type="button" class="long" value="长点的普通按钮" />
+      <input class="btn" type="button" value="红按钮" />
+      <input class="btn-w" type="button" value="长红按钮" />
+      <a class="btn">按钮连接</a>
+      <br />
+      <div class="sep"></div>
+
+      <!-- ******** 列表组件 ******** -->
+      <ul>
+        <li>普通列表1</li>
+        <li>普通列表2</li>
+        <li>普通列表3</li>
+      </ul>
+
+      <ul class="pad">
+        <li>pad列表1</li>
+        <li>pad列表2</li>
+        <li>pad列表3</li>
+      </ul>
+      <div class="sep"></div>
+
+      <!-- ******** 表单组件 ******** -->
+      <form action="/xxx.php" method="get">
+        Name: <input type="text" name="usr_name" required="required" />
+        <input type="submit" />
+      </form>
+      <div class="sep"></div>
+
+
+      <!-- ******** dl组件 ******** -->
+      <dl id="plan-new" class="inp">
+        <dt>出发时间：</dt>
+        <dd>
+          <select id="pnew-repeat">
+            <option value="0" selected="selected">某天</option>
+            <option value="1">每天</option>
+            <option value="2">每周</option>
+          </select>
+          <span>
+            <input type="date" id="pnew-sdate" />
+            <input type="time" id="pnew-time" />
+            <input type="range" min="1" max="100" step="5" value="25" />
+          </span>
+        </dd>
+
+        <dt>url：</dt>
+        <dd>
+          <input type="url" class="long" id="pnew-saddr" placeholder="输入页面地址" />
+        </dd>
+
+        <dt>邮箱/QQ：</dt>
+        <dd>
+          <input type="email" class="shorter" value="" />
+        </dd>
+
+        <dt>&nbsp;</dt>
+        <dd>
+          <input type="button" id="pnew-submit" value="创建" />
+          <span class="indicator"></span>
+        </dd>
+      </dl>
+      <div class="sep"></div>
+
+      <!-- ******** table 组件 ******** -->
+      <table id="plan-list">
+        <thead>
+          <tr>
+            <th>起点</th>
+            <th>终点</th>
+            <th>路程</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>长沙</td>
+            <td>武汉</td>
+            <td><a title="原文连接">连接</a></td>
+          </tr>
+          <tr>
+            <td>长沙</td>
+            <td>武汉</td>
+            <td><a title="原文连接">连接</a></td>
+          </tr>
+          <tr>
+            <td>长沙</td>
+            <td>武汉</td>
+            <td><a title="原文连接">连接</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table id="plan-list" class="list">
+        <thead>
+          <tr>
+            <th>起点</th>
+            <th>终点</th>
+            <th>路程</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>长沙</td>
+            <td>武汉</td>
+            <td><a title="原文连接">连接</a></td>
+          </tr>
+          <tr>
+            <td>长沙</td>
+            <td>武汉</td>
+            <td><a title="原文连接">连接</a></td>
+          </tr>
+          <tr>
+            <td>长沙</td>
+            <td>武汉</td>
+            <td><a title="原文连接">连接</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="sep"></div>
+
+      <!-- ******** 其他组件 ******** -->
+      <pre>
+p
+r
+e</pre>
+    </div>
+
+    <div id="bd-bottom">
+      <p>dodoma 版权所有</p>
+    </div>
+
+  </body>
+
+</html>

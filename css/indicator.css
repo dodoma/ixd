@@ -1,0 +1,20 @@
+.loading .indicator {
+    display:inline-block;
+    margin-left:5px;
+    width:16px; height:16px;
+    background: url(/ixd/img/loading.gif) 0 0 no-repeat;
+}
+
+.success .indicator {
+    display:inline-block;
+    margin-left:5px;
+    width:16px; height:16px;
+    background: url(/ixd/img/success.png) 0 0 no-repeat;
+}
+
+.error .indicator {
+    display:inline-block;
+    margin-left:5px;
+    width:16px; height:16px;
+    background: url(/ixd/img/error.png) 0 0 no-repeat;
+}

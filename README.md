@@ -20,7 +20,7 @@ web 交互设计相关
 
   --strikethrough--
 
-* [noty]
+* [noty](sample/noty.html)
 
 
 ### x. misc tools
@@ -28,3 +28,9 @@ web 交互设计相关
 * js/GB2312UTF8.js
 
 * js/jquery.md5.js
+
+
+### 用法
+
+任意站点的 html 根目录下 git clone --recursive https://github.com/dodoma/ixd.git ，
+然后浏览器访问本文件或sample目录下单个文件。

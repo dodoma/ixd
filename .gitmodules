@@ -1,0 +1,6 @@
+[submodule "noty"]
+	path = noty
+	url = https://github.com/needim/noty.git
+[submodule "animate"]
+	path = animate
+	url = https://github.com/daneden/animate.css.git

@@ -8,4 +8,11 @@
 
 .mi-off {background-position: 0px 0px;}
 .mi-on {background-position: -24px 0px;}
+
 .mi-debug {background-position: 0px -24px;}
+.mi-camera {background-position: -24px -24px;}
+.mi-zoom-in {background-position: -48px -24px;}
+.mi-zoom-out {background-position: -72px -24px;}
+.mi-metric {background-position: -96px -24px;}
+.mi-crossover {background-position: -120px -24px;}
+.mi-next {background-position: -144px -24px;}

@@ -22,12 +22,20 @@ web 交互设计相关
 
 * [noty](sample/noty.html)
 
+* [tabify](sample/tabify.html)
+
 
 ### x. misc tools
 
 * js/GB2312UTF8.js
 
 * js/jquery.md5.js
+
+### TODO
+
+* jquery animate
+* animate.css
+* overlay
 
 
 ### 用法

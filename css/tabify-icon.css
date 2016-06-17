@@ -1,0 +1,57 @@
+#dock .dock-button {
+    width: 28px;
+    height: 28px;
+    margin: 5px;
+    border: 1px solid transparent;
+}
+
+#dock .selected.wide {
+    padding-right: 10px;
+}
+
+#dock div.selected {
+    border-color: #ccc;
+    background-color: #eee;
+}
+
+#dock .dock-button:hover {
+    border-color: #ccc;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+#dock .mini-icon {
+    margin: 2px;
+}
+
+#dock .dock-view {
+    position: absolute;
+    margin-left: 44px;
+    margin-top: -35px;
+    width: 100px;
+    /*border: 1px solid #ccc;*/
+    background-color: #eee;
+}
+
+#dock .dock-view a {
+    display: block;
+    line-height: 28px;
+    padding-left: 20px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+#dock .dock-view a:hover {
+    text-decoration: none;
+    background: none repeat scroll 0 0 #FDFDFD;
+}
+
+#dock .dock-view li:first-child a {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #eee;
+}
+
+#dock .dock-view li:last-child a {
+/*    border-bottom: medium none;*/
+}

@@ -22,13 +22,17 @@
 
 .w100 {width: 100px;}
 
+.mr1 {margin-right: 1em;}
 .mr2 {margin-right: 2em;}
 .mr5 {margin-right: 5em;}
+.ml1 {margin-left: 1em;}
 .ml2 {margin-left: 2em;}
 .ml5 {margin-left: 5em;}
 
+.pr1 {padding-right: 1em;}
 .pr2 {padding-right: 2em;}
 .pr5 {padding-right: 5em;}
+.pl1 {padding-left:
 .pl2 {padding-left: 2em;}
 .pl5 {padding-left: 5em;}
 

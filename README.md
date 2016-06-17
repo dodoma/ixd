@@ -24,6 +24,8 @@ web 交互设计相关
 
 * [tabify](sample/tabify.html)
 
+* [tabify-icon](sample/tabify-icon.html)
+
 
 ### x. misc tools
 

@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/ixd/css/mini-icon.css" />
     <link rel="stylesheet" type="text/css" href="/ixd/css/tabify.css" />
     <script type="text/javascript" src="/ixd/b/base.js"></script>
+    <script type="text/javascript" src="/ixd/js/jquery.tabify.js"></script>
     <script type="text/javascript" src="/ixd/js/tabify.js"></script>
   </head>
 
@@ -16,52 +17,26 @@
     <div id="bd-middle">
       <h2>tabify</h2>
 
-      <ul id="dock">
-        <li>
-          <div class="dock-button wide"><div class="mini-icon mi-debug"></div></div>
-          <ul class="dock-view hide">
-            <li><a class="debug-level" val="2">关闭</a></li>
-            <li><a class="debug-level" val="3">错误</a></li>
-            <li><a class="debug-level" val="5">警告</a></li>
-            <li><a class="debug-level" val="7">调试</a></li>
-            <li><a class="debug-level" val="9">所有</a></li>
-          </ul>
-        </li>
+      <div class="tabs">
+        <ul>
+          <li><a href="#window-1">Tab 1</a></li>
+          <li><a href="#window-2">Tab 2</a></li>
+          <li><a href="#window-3">Tab 3</a></li>
+        </ul>
 
-        <li>
-          <div class="dock-button wide"><div class="mini-icon mi-camera"></div></div>
-          <ul class="dock-view hide">
-            <li><a class="camera-mode" val="2">关闭</a></li>
-            <li><a class="camera-mode" val="3">连拍（软）</a></li>
-            <li><a class="camera-mode" val="5">连拍（硬）</a></li>
-            <li><a class="camera-mode" val="7">点击拍照</a></li>
-          </ul>
-        </li>
+        <div id="window-1" class="window">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan consectetur blandit. Fusce odio purus, luctus id malesuada ut, pellentesque a nisi. Mauris eu tincidunt nunc. Suspendisse potenti. Morbi sapien risus, sagittis eget bibendum vel, porta nec nisi. Quisque ac sapien odio. Pellentesque vel leo imperdiet sapien auctor porta eget eget augue. Suspendisse velit ante, congue in placerat sit amet, lobortis at libero. Maecenas nec mauris in neque ultricies pharetra a nec massa. Ut vel aliquam metus. Vestibulum tincidunt ligula eget urna imperdiet eu cursus eros egestas. Nulla sed nisl eu nisl gravida viverra nec ac magna. Donec ac lorem nisi, a viverra elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+        <div id="window-2" class="window">
+		  <p>Donec ornare tortor eget enim mollis sodales. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur consequat lacinia lorem dignissim laoreet. Pellentesque libero turpis, egestas ut luctus interdum, ullamcorper non erat. Proin a tortor sed elit iaculis ultricies. Suspendisse potenti. In sed quam eu nulla semper iaculis sit amet vitae erat. Nulla rutrum pharetra facilisis. Nunc sagittis diam in odio pretium imperdiet. Duis consequat posuere est ac tincidunt. Quisque nec ipsum tortor. In hac habitasse platea dictumst. Praesent vitae ligula eu nisl gravida viverra. Duis consequat aliquam risus a feugiat. Sed molestie neque eget nulla pulvinar hendrerit. </p>
+        </div>
+        <div id="window-3" class="window">
+		  <p>Aenean venenatis tellus et tellus dignissim luctus. Donec eu commodo tellus. Curabitur aliquam, purus nec pulvinar rutrum, lacus est posuere arcu, ac viverra ante tortor ac neque. Quisque sed mi orci. Morbi sit amet dui eget nibh venenatis sollicitudin vel eu dolor. Sed lorem eros, sodales in vulputate id, mattis eget nunc. Suspendisse potenti. Nulla eget dignissim purus. Nunc bibendum posuere mi quis tempor. Fusce scelerisque, lectus ac ultrices dignissim, velit nisi varius orci, sed rhoncus neque ipsum sed mi. Nulla eget metus at libero ullamcorper sodales. Fusce congue, augue ut fermentum aliquam, urna augue congue est, mollis porta ante neque id dui. In tempor semper velit, vel aliquet est imperdiet vitae. Fusce euismod nibh sit amet ipsum consequat lacinia sed et nisi. Phasellus id risus tortor. Morbi a commodo tellus. </p>
+        </div>
 
-        <li>
-          <div class="dock-button"><div class="mini-icon mi-zoom-in"></div></div>
-        </li>
+      </div>
 
-        <li>
-          <div class="dock-button"><div class="mini-icon mi-zoom-out"></div></div>
-        </li>
-
-        <li>
-          <div class="dock-button wide"><div class="mini-icon mi-metric"></div></div>
-          <ul class="dock-view hide">
-            <li><a class="metric-mode" val="2">距离</a></li>
-            <li><a class="metric-mode" val="3">角度</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <div class="dock-button"><div class="mini-icon mi-crossover"></div></div>
-        </li>
-
-        <li>
-          <div class="dock-button"><div class="mini-icon mi-next"></div></div>
-        </li>
-      </ul>
+      <div class="sep"></div>
 
     </div>
 

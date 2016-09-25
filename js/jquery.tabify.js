@@ -1,7 +1,8 @@
 (function($) {
 	$.fn.tabify = function(options) {
 		var defaults = {
-            onShow: null
+            onShow: null,
+            tabIndex: 0
         };
 
 		var options = $.extend(defaults, options);
@@ -10,11 +11,14 @@
 			var self = $(this);
 
 			$(this).find(".window").hide();
-			$(this).find(".window:first").show();
+			//$(this).find(".window:first").show();
+			//$(this).find("ul li:first").addClass('active');
+            $(this).find(".window").eq(options.tabIndex).show();
+            $(this).find("ul li").eq(options.tabIndex).addClass('active');
 
-			$(this).find("ul li:first").addClass('active');
             if (jQuery.isFunction(options.onShow)) {
-                options.onShow($(this).find("ul li:first"));
+                //options.onShow($(this).find("ul li:first"));
+                options.onShow($(this).find("ul li").eq(options.tabIndex));
             }
 
 			$(this).find("ul li a").click(function(){

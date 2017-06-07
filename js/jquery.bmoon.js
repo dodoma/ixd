@@ -39,4 +39,9 @@
     $.fn.toggleAccordion = function(fn) {
         $(this).next().toggleClass('expanded');
     };
+
+    Number.prototype.toFixed = function(exponent) {
+        return parseInt(this * Math.pow(10, exponent) + 0.5) / Math.pow(10, exponent);
+    };
+
 })(jQuery);

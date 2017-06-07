@@ -1,5 +1,6 @@
 body {
     background: #f6f6f6 /*url(/ixd/img/bg.jpg) repeat-x*/;
+    height: 100%;
 }
 
 a {color: #DB3946; cursor: pointer; text-decoration: none;}

@@ -1,7 +1,7 @@
 ;var mgd = mgd || {}, bmoon = bmoon || {};
 bmoon.utl = {
 	exetime: 0,
-	
+
 	randomWord: function(n) {
 		var baseStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 		for (var i = 0, r =""; i < n; i++) r += baseStr.charAt(Math.floor(Math.random() * 62));
@@ -36,7 +36,7 @@ bmoon.utl = {
     urlparam: location.href.match(/\?.*$/) ? location.href.match(/\?.*$/)[0] : '',
 
     refer: document.referrer,
-    
+
     title: $('head title').html(),
 
 	//type(101);          // returns 'Number'
@@ -67,7 +67,7 @@ bmoon.utl = {
 		//if (reg.test(location.href)) return unescape(RegExp.$2.replace(/\+/g, " ")); return "";
 		if (reg.test(location.href)) return decodeURIComponent(RegExp.$2.replace(/\+/g, " ")); return "";
 	},
-    
+
 	// http://stackoverflow.com/questions/698301/is-there-a-native-jquery-function-to-switch-elements
 	// http://www.doxdesk.com/
 	// BUGFULL
@@ -112,7 +112,7 @@ bmoon.utl = {
 			bmoon.utl.exetime = 0;
 			return;
 		}
-		
+
 		// through exp: we can't use if (until !== undefined), seems js will cache variable's val
 		if (eval(until)) {
 			bmoon.utl.exetime = 0;
@@ -131,13 +131,13 @@ bmoon.utl = {
 
     stringToObj: function(s) {
         var o = {};
-        
+
         try {
             o = $.parseJSON(s);
         } catch (err) {
             return null;
         }
-        
+
         return o;
     },
 
@@ -154,7 +154,7 @@ bmoon.utl = {
         //dc[1] = 1.852,              // km
         //dc[2] = 185200.0/160934.40, // 1.150779448 sm
         //dc[3] = 185200.0/30.48, // 6076.11549 ft
-        
+
         lat1 = (Math.PI/180)*pointa[0],
         lat2 = (Math.PI/180)*pointb[0],
         lon1 = (Math.PI/180)*pointa[1],
@@ -163,8 +163,29 @@ bmoon.utl = {
         with (Math) {
             var cd = acos(sin(lat1)*sin(lat2)+cos(lat1)*cos(lat2)*cos(lon1-lon2));
         }
-        
+
         //return Math.round( cd*(180/Math.PI)*60*dc );
         return (cd*(180/Math.PI)*60*dc).toFixed(2);
+    },
+
+    meLoading: function(o) {
+        o.removeClass('success').removeClass('error').addClass('loading');
+    },
+
+    meSuccess: function(o) {
+        o.removeClass('loading').addClass('success');
+    },
+
+    meError: function(o, errmsg) {
+        o.removeClass('loading').addClass('error');
+        if (errmsg) o.append('<span>'+ data._errmsg + '</span>');
+    },
+
+    readBlobAsDataURL: function (blob, callback) {
+        var a = new FileReader();
+        a.onload = function(e) {
+            callback(e.target.result);
+        };
+        a.readAsDataURL(blob);
     }
 };

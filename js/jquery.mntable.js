@@ -104,6 +104,16 @@
 
         makeHead(heads);
         makeRows(rows);
-        table.makeRows = makeRows;
+        table.on('makeRows', function(e, arg) {
+            var rows = [], type = bmoon.utl.type(arg);
+
+            if (type == 'Object') {
+                rows.push(arg);
+            } else if (type == 'Array') {
+                rows = arg;
+            } else return;
+
+            makeRows(rows);
+        });
     };
 })(jQuery);

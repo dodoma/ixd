@@ -185,6 +185,7 @@ bmoon.utl = {
         var a = new FileReader();
         a.onload = function(e) {
             callback(e.target.result);
+            delete a;
         };
         a.readAsDataURL(blob);
     }

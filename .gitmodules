@@ -4,3 +4,6 @@
 [submodule "animate"]
 	path = animate
 	url = https://github.com/daneden/animate.css.git
+[submodule "jquery-popup-overlay"]
+	path = jquery-popup-overlay
+	url = https://github.com/vast-engineering/jquery-popup-overlay.git

@@ -60,7 +60,7 @@ a.red-btn:hover {
 
 ul.pad {padding: 0 2em;}
 
-dl.inp dt {float: left; clear: left; margin: 5px; line-height: 24px; text-align: right;}
+dl.inp dt {float: left; clear: left; margin: 3px 10px 3px 0px; line-height: 24px; text-align: right;}
 dl.inp dd {margin: 5px; line-height: 30px;}
 dl.inp dd img {vertical-align: middle;}
 dl.inp dd span {margin-left: 20px;}

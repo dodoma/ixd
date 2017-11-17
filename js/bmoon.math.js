@@ -17,10 +17,10 @@
             pb = [(pointb[0] - origin.x) / scale.x, (pointb[1] - origin.y) / scale.y];
 
         return {
-            x: _min(pa[0], pb[0]),
-            y: _min(pa[1], pb[1]),
-            w: abs(pa[0] - pb[0]),
-            h: abs(pa[1] - pb[1])
+            x: parseInt(_min(pa[0], pb[0])),
+            y: parseInt(_min(pa[1], pb[1])),
+            w: parseInt(abs(pa[0] - pb[0])),
+            h: parseInt(abs(pa[1] - pb[1]))
         }
     }
 

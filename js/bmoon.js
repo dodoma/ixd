@@ -211,6 +211,7 @@ bmoon.utl = {
     },
 
     meLoading: function(o) {
+        $('.etip', o).remove();
         o.removeClass('success').removeClass('error').addClass('loading');
     },
 
@@ -220,7 +221,7 @@ bmoon.utl = {
 
     meError: function(o, errmsg) {
         o.removeClass('loading').addClass('error');
-        if (errmsg) o.append('<span>'+ data._errmsg + '</span>');
+        if (errmsg) o.append('<span class="etip">'+ errmsg + '</span>');
     },
 
     readBlobAsDataURL: function (blob, callback) {
@@ -230,5 +231,21 @@ bmoon.utl = {
             delete a;
         };
         a.readAsDataURL(blob);
+    },
+
+    dateTimeFromTimeStamp: function(ts) {
+        var date = new Date(ts * 1000);
+
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+
+        var time = year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + sec;
+
+        return time;
     }
 };

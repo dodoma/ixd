@@ -5,7 +5,8 @@ all: preload $(FILES)
 preload:
 	@mkdir -p b/
 
-b/base.css: css/reset.css css/base.css css/conv.css css/layout.css css/indicator.css animate/animate.css
+b/base.css: css/reset.css css/base.css css/conv.css css/layout.css css/indicator.css css/pagenav.css \
+            animate/animate.css
 
 b/base.js: js/jquery-2.2.4.js js/jquery.cookie.js js/jquery.hotkeys.js js/jquery.md5.js \
            js/jquery.bmoon.js js/bmoon.js js/bmoon.math.js js/bmoon.canvas.js \

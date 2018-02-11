@@ -1,0 +1,93 @@
+.pagenav {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: right;
+}
+
+.pagenav-info {
+    display: inline-block;
+}
+
+.pagenav-info .zent-select{
+    width:60px
+}
+
+.pagenav .nav-list {
+    display: inline-block;
+}
+
+.pagenav .nav-list .pager {
+    /*position: relative;*/
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 0 5px;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    padding: 6px 8px;
+    min-width: 30px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pagenav .nav-list .pager--omni {
+    margin-left: 0;
+    margin-right: -5px;
+    border: none;
+    cursor: default;
+}
+
+.pagenav .nav-list .pager--current {
+    color: #fff;
+    background: #38f;
+    border-color: #38f;
+    cursor: default;
+}
+
+.pagenav .nav-list .pager--jump {
+    margin-left: 15px;
+    padding: 0;
+    cursor: default;
+}
+
+.pagenav .nav-list .pager--disabled{
+    border-color:#e5e5e5;
+    cursor:not-allowed;
+    color:#e5e5e5
+}
+
+.pagenav .nav-list .pager__input{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:-1px;
+    margin-right:0;
+    border:1px solid #bbb;
+    border-right-color:#bbb;
+    padding:6px 2px;
+    min-width:21px;
+    max-width:40px;
+    height:26px;
+    text-align:center;
+    font-weight:400;
+    outline:none;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px
+}
+
+.pagenav .nav-list .pager__input:focus{
+    border-color:#38f;
+    -webkit-box-shadow:0 0 1px #bdf;
+    box-shadow:0 0 1px #bdf
+}
+
+.pagenav .nav-list .pager__suffix{
+    padding:5px 5px;
+    background:#e5e5e5
+}

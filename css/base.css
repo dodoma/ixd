@@ -69,3 +69,4 @@ table.list th {background-color: #eee; border-left:1px solid #CCCCCC; border-bot
 table.list td {border-left:1px solid #CCCCCC; border-bottom:1px solid #CCCCCC; padding:4px 4px;}
 table.list td span {margin-left: 10px;}
 table.list tr:hover {background-color: #FFFFCC;}
+table.list tr.fresh {background-color: #FFFFCC;}

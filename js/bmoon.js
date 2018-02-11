@@ -240,12 +240,59 @@ bmoon.utl = {
         var month = date.getMonth() + 1;
         var day = date.getDate();
 
+        month = month < 10 ? '0' + month : month;
+        day = day < 10 ? '0' + day : day;
+
         var hour = date.getHours();
         var min = date.getMinutes();
         var sec = date.getSeconds();
 
+        hour = hour < 10 ? '0' + hour : hour;
+        min = min < 10 ? '0' + min : min;
+        sec = sec < 10 ? '0' + sec : sec;
+
         var time = year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + sec;
 
         return time;
+    },
+
+    dateFromTimestamp: function(ts) {
+        var date = new Date(ts * 1000);
+
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+
+        return year + '-' + (month < 10 ? '0' + month : month) + '-' + (day < 10 ? '0' + day : day);
+    },
+
+    timestampFromDate: function(dates) {
+        return parseInt(Date.parse(dates) / 1000);
+    },
+
+    timestampToday: function() {
+        var date = new Date();
+        var utc = parseInt(date.getTime() / 1000);
+
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+
+        var todaysec = hour * 3600 + min * 60 + sec;
+
+        return utc - todaysec;
+    },
+
+    timestampDaysago: function(num) {
+        var today = bmoon.utl.timestampToday();
+
+        return today - (24 * 3600 * num);
+    },
+
+    timestampNow: function() {
+        var date = new Date();
+        var utc = parseInt(date.getTime() / 1000);
+
+        return utc;
     }
 };

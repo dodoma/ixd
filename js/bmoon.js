@@ -294,5 +294,27 @@ bmoon.utl = {
         var utc = parseInt(date.getTime() / 1000);
 
         return utc;
+    },
+
+    list2map: function(olist) {
+        let map = {};
+        let key = "", val = "";
+
+        if (typeof(olist) !== 'object') return map;
+
+        for (let idx in olist) {
+            if (parseInt(idx) % 2 === 0) {
+                key = olist[idx];
+            } else {
+                val = olist[idx];
+            }
+
+            if (key.length > 0 && val.length > 0) {
+                map[key] = val;
+                key = val = "";
+            }
+        }
+
+        return map;
     }
 };
